@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html  dir="ltr">
+  <head>
+       	<title >THE WAR</title>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link   href="infantry-512.png">
+
+  </head>
+  <body>
+<div class="navbar">
+    <a class="logo" href="#"> THE WAR</a>
+    <ul class="nav">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><div class="dropdown">
+  <a class="dropbtn">GUERRE</a>
+  <div class="dropdown-content">
+    <a href="mondg.html" >DES GUERRE MONDIALE</a>
+    <a href="jeux.html">JEUX DE GUERRE</a>
+    <a href="personnes.html">FIGURES DE GUERRE</a>
+    <a href="res.html" >LES RESULTATS DE GUERRE</a>
+  </div>
+</div>
+ 
+  </li>
+
+
+
+
+
+
+<li><a href="#services">Service</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+
+<section class="banner-area" id="home">
+  
+
+</section>
+
+<section class="about-area" id="about">
+    <div class="slidercontainer">  
+        <div class="showSlide fade">  
+            <img src="img1.jpg" />  
+        </div>  
+        <div class="showSlide fade">  
+            <img src="img2.jpg"/>  
+        </div>  
+  
+        <div class="showSlide fade">  
+            <img src="img3.jpg"/>  
+        </div>  
+        <div class="showSlide fade">  
+            <img src="img4.jpg"/>  
+             
+        </div>  
+         <a class="left" onclick="nextSlide(-1)">❮</a>  
+        <a class="right" onclick="nextSlide(1)">❯</a>  
+        </div> 
+
+<script type="text/javascript">  
+        var slide_index = 1;  
+        displaySlides(slide_index);  
+        function nextSlide(n) {  
+            displaySlides(slide_index += n);  
+        }  
+        function currentSlide(n) {  
+            displaySlides(slide_index = n);  
+        }  
+       
+        function displaySlides(n) {  
+            var i;  
+            var slides = document.getElementsByClassName("showSlide");  
+            if (n > slides.length) { slide_index = 1 }  
+            if (n < 1) { slide_index = slides.length }  
+            for (i = 0; i < slides.length; i++) {  
+                slides[i].style.display = "none";  
+            }  
+            slides[slide_index - 1].style.display = "block";  
+        }  
+</script>   
+
+</section>
+
+<section class="port-area" id="portfolio">
+    <div class="text-part">
+        <h1>
+IMPORTANT!</h1>
+<p style="font-size: 60px;">
+Rappelez-vous que la guerre ne laisse que la dévastation</p>
+</div>
+</section>
+
+<section class="service-area" id="services">
+    <div class="text-part">
+        <h1>
+Services Area</h1>
+<p>
+Notre site vous propose tout ce qui concerne la guerre.
+Vous trouverez ici des informations sur les personnages et les chefs de guerre les plus importants, les guerres mondiales et les jeux de guerre les plus importants</p>
+</div>
+</section>
+
+
+    <section>
+
+
+ 
+  
+  </body>
+</html>
+</section>
